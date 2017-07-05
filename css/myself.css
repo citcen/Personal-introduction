@@ -1,0 +1,727 @@
+.hide {
+    display: none
+}
+
+.show {
+    display: block;
+}
+
+* {
+    -webkit-transition: width 0.5s, padding 0.5s, margin 0.5s;
+    -moz-transition: width 0.5s, padding 0.5s, margin 0.5s;
+    -ms-transition: width 0.5s, padding 0.5s, margin 0.5s;
+    -o-transition: width 0.5s, padding 0.5s, margin 0.5s;
+    transition: width 0.5s, padding 0.5s, margin 0.5s;
+}
+
+header {
+    background: url("../img/backgrounds/counter-bg.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+}
+
+section, footer {
+    min-height: 488px;
+    height: auto;
+}
+
+section {
+    background: #F8F8F8;
+}
+
+section .container {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
+nav {
+    z-index: 1;
+}
+
+/*导航条 轮播图片*/
+header > div > div .item > div {
+    min-height: 700px;
+}
+
+header > div > div .item .bg_banner {
+    background: url("../img/backgrounds/bg-image-1.jpg");
+}
+
+header .container > div {
+    position: relative;
+}
+
+.menu_ham span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.color {
+    color: #AB50D0;
+}
+
+.nav-top {
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 35px;
+    background: rgba(10, 10, 10, 0.6);
+}
+
+.nav-top button {
+    width: 60px;
+    height: 40px;
+    background: transparent;
+}
+
+header .container {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.introduce h3 span {
+    display: inline-block;
+    border: 2px solid #efa579;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.introduce p {
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.introduce p a {
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.introduce p a span {
+    color: #fff;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: transform 0.8s, opacity 0.5s 0.2s
+}
+
+.introduce p a:hover span {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: transform 0.8s, opacity 1s 0.2s;
+    -moz-transition: transform 0.8s, opacity 1s 0.2s;
+
+    -o-transition: transform 0.8s, opacity 1s 0.2s;
+
+    -ms-transition: transform 0.8s, opacity 1s 0.2s;
+    transition: transform 0.8s, opacity 1s 0.2s;
+
+}
+
+.direction {
+    color: #fff;
+    height: 20px;
+}
+
+.direction span {
+    padding: 30px;
+    cursor: pointer;
+}
+
+@-webkit-keyframes myfirst1 {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 15px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.direction:not(:nth-child(4)) > span {
+    position: relative;
+    animation: myfirst1 0.6s ease infinite;
+    -moz-animation: myfirst1 0.8s ease infinite;
+    -o-animation: myfirst1 0.8s ease infinite;
+}
+
+#nav1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #338;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #ccc;
+}
+
+#nav1 .intr {
+    float: left;
+    color: #338;
+    padding-left: 15px;
+}
+
+#nav1 ul {
+    float: right;
+}
+
+#nav1 li {
+    float: left;
+    color: #338;
+    height: 50px;
+    padding: 0 10px 0 10px;
+    list-style: none
+}
+
+.active {
+    background: #ddd;
+}
+
+#nav1 a {
+    display: inline-block;
+    height: 50px;
+}
+
+#nav1 a:hover {
+    color: #333;
+}
+
+.direction .move1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second_line {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    color: #fff;
+}
+
+.second_line > div:first-child {
+    background: rgba(10, 10, 10, 0.6);
+}
+
+.second_line .row > div:first-child {
+    text-align: center;
+    margin-top: 26px;
+}
+
+.skill > div > span:first-child {
+    position: absolute;
+    top: -16px;
+    left: 45px;
+    color: #555555;
+    border-bottom: 5px solid #ffffff;
+}
+
+.skill > canvas {
+    float: left;
+}
+
+.skill_me {
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    height: 3px;
+}
+
+.skill_me p {
+    display: inline-block;
+    width: 120px;
+    height: 4px;
+    background: #AB50D0;
+}
+
+.skill {
+    max-width: 231px;
+    height: 310px;
+    /*margin-top: 50px;*/
+    display: block;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    /*margin-left: 70px;*/
+    /*position: relative;*/
+    text-align: center;
+}
+
+.skill p {
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 200px;
+}
+
+.skill > div {
+    float: left;
+    border: 5px solid #555555;
+    padding: 15px 20px;
+    width: 120px;
+    font-size: 20px;
+    margin: 20px 40px;
+    position: relative;
+    text-align: center;
+}
+
+.skill > div > span:first-child {
+    position: absolute;
+    top: -16px;
+    left: 45px;
+    color: #555555;
+    border-bottom: 5px solid #ffffff;
+}
+
+/*学习经验*/
+#work_student {
+    width: 100%;
+    min-height: 360px;
+    background: url("../img/backgrounds/counter-bg.jpg");
+    padding: 20px 0 0 0px;
+}
+
+@media screen and(min-width: 768px) {
+    #work_student {
+        width: 100%;
+        height: 600px;
+        background: url("../img/backgrounds/counter-bg.jpg");
+        padding: 20px 0 0 0;
+    }
+}
+
+.education {
+    border: 1px solid #dbdbdb;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.education:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-shadow: 5px 5px 10px #ddd;
+    -moz-box-shadow: 5px 5px 10px #ddd;
+    box-shadow: 5px 5px 10px #ddd;
+}
+
+.education > h1 {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.education > p > span {
+    padding-right: 10px;
+}
+
+/* 我的技能模块css定制样式 */
+#project {
+    background: url("../img/backgrounds/patterns/16.png");
+}
+
+#project div.container {
+    padding-top: 50px;
+}
+
+.btn_title {
+    margin: 50px 0;
+}
+
+.pic_project {
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pic_active {
+    display: block;
+}
+
+.pic_project > div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3f52;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: transform 0.5s, opacity 0.1s 0.5s;
+    -moz-transition: transform 0.5s, opacity 0.1s 0.5s;
+    -ms-transition: transform 0.5s, opacity 0.1s 0.5s;
+    -o-transition: transform 0.5s, opacity 0.1s 0.5s;
+    transition: transform 0.5s, opacity 0.1s 0.5s;
+    opacity: 0;
+}
+
+.pic_project > div > h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #F8F8F8;
+    padding-top: 0px;
+}
+
+.pic_project:hover h1 {
+    padding-top: 50px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.pic_project > div > span {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    height: 3px;
+    background: #ac2925;
+}
+
+.gradient_bg { /*              渐变背景通用样式                    */
+    background: transparent;
+    border-width: 2px;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+}
+
+.pic_project > div > div {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pic_project > div > div a {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.pic_project:hover a.a1 {
+    padding-right: 0;
+    -webkit-transition: padding-right 1s 1s;
+    -moz-transition: padding-right 1s 1s;
+    -ms-transition: padding-right 1s 1s;
+    -o-transition: padding-right 1s 1s;
+    transition: padding-right 1s 1s;
+}
+
+.pic_project > img {
+    -webkit-transition: transform 4s;
+    -moz-transition: transform 4s;
+    -ms-transition: transform 4s;
+    -o-transition: transform 4s;
+    transition: transform 4s;
+}
+
+.pic_project:hover > img {
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+    -webkit-transition: transform 3s;
+    -moz-transition: transform 3s;
+    -ms-transition: transform 3s;
+    -o-transition: transform 3s;
+    transition: transform 3s;
+}
+
+.pic_project:hover > div {
+    opacity: 0.8;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: transform 0.5s, opacity 0.1s;
+    -moz-transition: transform 0.5s, opacity 0.1s;
+    -ms-transition: transform 0.5s, opacity 0.1s;
+    -o-transition: transform 0.5s, opacity 0.1s;
+    transition: transform 0.5s, opacity 0.1s;
+}
+
+/* 页面底部css定制样式 */
+footer {
+    background: url("../img/backgrounds/body.jpg");
+}
+
+footer > div.bg_color {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 50px;
+}
+
+.footer_me {
+    text-align: center;
+}
+
+.footer_me p {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.footer_me > div {
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    background: #AB50D0;
+}
+
+footer .form-control {
+    background: transparent;
+    color: #fff;
+    height: 42px;
+    border: 2px solid #ffffff;
+    margin-top: 15px;
+    outline: none;
+}
+
+footer textarea {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    letter-spacing: 10px;
+    font-size: 16px;
+
+}
+
+footer .btn {
+    font-size: 25px;
+    padding: 10px 0 10px 20px;
+    color: #dbdbdb;
+    background: transparent;
+    outline: none;
+    -webkit-transition: padding-right 0.5s;
+    -moz-transition: padding-right 0.5s;
+    -ms-transition: padding-right 0.5s;
+    -o-transition: padding-right 0.5s;
+    transition: padding-right 0.5s;
+}
+
+footer .btn:focus {
+    border: none;
+    outline: none;
+}
+
+footer .btn span {
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-transition: transform 0.5s, opacity 0.5s;
+    -moz-transition: transform 0.5s, opacity 0.5s;
+    -ms-transition: transform 0.5s, opacity 0.5s;
+    -o-transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+footer .btn:hover {
+    padding-right: 30px;
+    -webkit-transition: padding-right 1s;
+    -moz-transition: padding-right 1s;
+    -ms-transition: padding-right 1s;
+    -o-transition: padding-right 1s;
+    transition: padding-right 1s;
+}
+
+footer .btn:hover span {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: transform 0.8s, opacity 1s 0.2s;
+    -moz-transition: transform 0.8s, opacity 1s 0.2s;
+    -ms-transition: transform 0.8s, opacity 1s 0.2s;
+    -o-transition: transform 0.8s, opacity 1s 0.2s;
+    transition: transform 0.8s, opacity 1s 0.2s;
+}
+
+footer .col-md-12 {
+    text-align: center;
+}
+
+/* 顶部弹出工具样式 */
+.top_tools {
+    position: fixed;
+    top: 120px;
+    z-index: 1;
+}
+
+.top_tools button {
+    padding: 5px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    border: 0;
+}
+
+@keyframes myfirst {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(900deg);
+    }
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(900deg);
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(900deg);
+    }
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(900deg);
+    }
+}
+
+.top_tools button span {
+    animation: myfirst 5s linear infinite;
+    /* Firefox: */
+    -moz-animation: myfirst 5s linear infinite;
+    /* Safari 和 Chrome: */
+    -webkit-animation: myfirst 5s linear infinite;
+    /* Opera: */
+    -o-animation: myfirst 5s linear infinite;
+}
+
+/* 侧面划出菜
+/* 侧面划出菜单 */
+aside {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 270px;
+    height: 100%;
+    z-index: 1100;
+    padding: 30px 20px;
+    overflow: auto;
+}
+
+aside > img {
+    width: 80%;
+}
+
+aside > span {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+aside p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+aside div .color {
+    width: 50px;
+    height: 3px;
+    background: #AB50D0;
+    margin-bottom: 10px;
+}
+
+aside div.color-group span {
+    cursor: pointer;
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    border-radius: 5px;
+    background: #AB50D0;
+}
+
+aside div.color-group span:nth-child(2) {
+    background: #5093D0;
+
+}
+
+aside div.color-group span:nth-child(3) {
+    background: #D05072;
+}
+
+aside div.color-group span:nth-child(4) {
+    background: #50D087;
+}
+
+aside div.color-group span:nth-child(5) {
+    background: #50D0CB;
+}
+
+aside div.color-group span:nth-child(6) {
+    background: #D07C50;
+}
+
+aside div.color-group span:nth-child(7) {
+    background: #FF4D00;
+}
+
+aside div.color-group span:nth-child(8) {
+    background: #008080;
+}
+
+aside div.color-group span:nth-child(9) {
+    background: #800000;
+}
+
+aside div.color-group span:nth-child(10) {
+    background: #B8860B;
+}
