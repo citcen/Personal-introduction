@@ -14,6 +14,15 @@
     transition: width 0.5s, padding 0.5s, margin 0.5s;
 }
 
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
 header {
     background: url("../img/backgrounds/counter-bg.jpg");
     -webkit-background-size: cover;
@@ -579,13 +588,13 @@ footer .col-md-12 {
 }
 
 /* 顶部弹出工具样式 */
-.top_tools {
+.top-tools {
     position: fixed;
     top: 120px;
     z-index: 1;
 }
 
-.top_tools button {
+.top-tools button {
     padding: 5px 15px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -632,7 +641,7 @@ footer .col-md-12 {
     }
 }
 
-.top_tools button span {
+.top-tools button span {
     animation: myfirst 5s linear infinite;
     /* Firefox: */
     -moz-animation: myfirst 5s linear infinite;
