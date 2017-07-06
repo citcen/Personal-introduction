@@ -26,7 +26,7 @@ $(window).scroll(function () {
     });
     //页面向下滚动距离
     var scrolltop = $('body').scrollTop();
-    console.log(scrolltop);
+    /*console.log(scrolltop);*/
     if (scrolltop < elem_sTop[0]) {
         elem_a[0].parent().addClass('active').siblings().removeClass('active');
     } else if (scrolltop >= elem_sTop[0] && scrolltop < elem_sTop[1]) {
