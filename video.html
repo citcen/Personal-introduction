@@ -1,14 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>视频主题</title>
     <meta name="viewport" content="webkit">
     <meta name="viewport" content="width = device-width initial-scale = 1">
+    <link rel="Shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/myself.css">
 </head>
 <body>
+    <!-- 主题选择btn -->
+    <div class="top-tools">
+        <button class="btn btn-danger">
+            <span class="glyphicon glyphicon-asterisk"></span>
+        </button>
+    </div>
+    <!-- 主题选择btn  end -->
 
+    <!-- 主题选择 -->
+    <aside id="aside">
+        <span class="color" id="close">&times;</span>
+        <p>选取主题颜色</p>
+        <div class="color"></div>
+        <div class="color-group">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="select-color">
+            <p>静态主题</p>
+            <div class="color"></div>
+            <div class="color-group">
+                <a href="index.html"><img src="img/tars/head.jpg" width="120" height="120" alt=""></a>
+            </div>
+        </div>
+        <div class="select-color">
+            <p>幻灯片主题</p>
+            <div class="color"></div>
+            <div class="color-group">
+                <a href="slide.html"><img src="img/tars/head.jpg" width="120" height="120" alt=""></a>
+            </div>
+        </div>
+        <div class="select-color">
+            <p>视屏主题</p>
+            <div class="color"></div>
+            <div class="color-group">
+                <a href="video.html"><img src="img/tars/head.jpg" width="120" height="120" alt=""></a>
+            </div>
+        </div>
+    </aside>
+    <!-- 主题选择 end -->
+
+    <!-- 顶部导航  -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- 针对移动端的容器 -->
+            <div class="navbar-header">
+                <button data-target="#mycollapse" class="navbar-toggle collapsed" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#header" class="navbar-brand">个人简历</a>
+            </div>
+            <!-- 包含导航条组件的容器 -->
+            <div id="mycollapse" class="navbar-collapse collapse ">
+                <!-- 信息（居右） -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">简介</a></li>
+                    <li><a href="#skill">我的技能</a></li>
+                    <li><a href="#work_student">学习及工作经历</a></li>
+                    <li><a href="#project">项目介绍</a></li>
+                    <li><a href="#footer">联系我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 顶部导航 end -->
+
+    <!-- 自我评价 -->
+    <header class="header" style="background: url('videos/ocean.jpg') no-repeat;background-size: cover">
+
+        <video autoplay loop width="100%" style="min-height: 700px">
+            <source src="videos/ocean.mp4" type="audio/mp4">
+            <source src="videos/ocean.webm" type="audio/webm">
+            您的浏览器不支持 video 标签。
+        </video>
+
+
+        <div class="container">
+            <div class="row text-right">
+                <p class="nav-top hidden-sm hidden-xs">
+                    <span class="color">导</span>航条
+                    <button class="btn btn-default menu_ham">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid second_line">
+            <div class="row" id="header">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <img class="img img_reset img_circle img_responsive"
+                         src="img/tars/head.jpg" width="220" height="220" alt="头像">
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-2 introduce">
+                    <h3 class="my_name">您好!<span class="color">我是何柯岑</span></h3>
+                    <p>乐观积极，有良好的学习能力，沟通能力，团队精神；</p>
+                    <p>适应能力强，能快速融入新团队；</p>
+                    <p>做事认真稳重，抗压能力强；是一个有责任心的前端开发人员。</p>
+                    <p>
+                        <a href="#footer" class="btn btn-group-lg btn-success gradient_bg col-sm-12 col-xs-12 col-md-4">
+                            联系我<span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row direction text-center">
+                <span href="#skill" class="glyphicon glyphicon-chevron-down color"></span></div>
+            <div class="row direction text-center">
+                <span href="#skill" class="glyphicon glyphicon-chevron-down color"></span></div>
+            <div class="row direction text-center">
+                <span href="#skill" class="glyphicon glyphicon-chevron-down color move1"></span>
+            </div>
+        </div>
+    </header>
+    <!-- 自我评价 end -->
+    <section id="skill">
+        <div class="container">
+            <div class="row">
+                <h1><span class="color">我</span>的技能</h1>
+                <div class="skill_me">
+                    <p class="color"></p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas"></canvas>
+                        <p>95%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">HTML</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas1"></canvas>
+                        <p>92%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">css</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas2"></canvas>
+                        <p>88%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">javascript</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas3"></canvas>
+                        <p>85%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">jQuery</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas4"></canvas>
+                        <p>85%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">ajax</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas5"></canvas>
+                        <p>70%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">bootstrap</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas6"></canvas>
+                        <p>68%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">react</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-3 ">
+                    <div class="skill">
+                        <canvas width="200" height="200" id="canvas7"></canvas>
+                        <p>60%</p>
+                        <div><span class="glyphicon glyphicon-chevron-up"></span><span class="color">ES6</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work_student">
+        <div class="container">
+            <div class="row">
+                <h1><span class="color">我</span>的学习经历</h1>
+                <div class="skill_me">
+                    <p class="color"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="education col-md-5 col-sm-6 col-xs-12">
+                    <h1>教育</h1>
+                    <p><span class="glyphicon glyphicon-home"></span>学院：湖南水利水电职业学院</p>
+                    <p><span class="glyphicon glyphicon-chevron-up"></span>专业：电力自动化</p>
+                    <p><span class="glyphicon glyphicon-education"></span>学习时间：2013.09－2016.06</p>
+                    <p><span class="glyphicon glyphicon-thumbs-up"></span>荣誉证书：计算机一级证书,英语三级</p>
+                </div>
+                <div class="education col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+                    <h1>工作经验</h1>
+                    <p>
+                        <span class="glyphicon glyphicon-home"></span>湖南金伦有限公司
+                    </p>
+                    <p><span class="glyphicon glyphicon-education"></span>时间：2015.10－2016.4</p>
+                    <p><span class="glyphicon glyphicon-thumbs-up"></span>担任职务：web前端工程师
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-home"></span>永诚恒互联网有限公司
+                    </p>
+                    <p><span class="glyphicon glyphicon-education"></span>时间：2016.5－2017.2</p>
+                    <p><span class="glyphicon glyphicon-thumbs-up"></span>担任职务：web前端工程师
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container">
+            <div class="row">
+                <h1><span class="color">我</span>的项目</h1>
+                <div class="skill_me">
+                    <p class="color"></p>
+                </div>
+            </div>
+            <div class="row text-center btn_title project_name" id="project_list ">
+                <a value="introduce" class="gradient_bg btn btn-danger media_layout">reactDemo</a>
+                <a value="pc" class="gradient_bg btn btn-success pc">pc端项目</a>
+                <a value="my_app" class="gradient_bg btn btn-danger mobile ">移动端项目</a>
+            </div>
+            <div class="pic_project col-md-4 col-sm-6 col-xs-12 link introduce">
+                <img src="img/portfolio/portfolio3.jpg" class="img-responsive">
+                <div>
+                    <h1>react图片画廊</h1>
+                    <span></span>
+                    <div>
+                        <a href="https://citcen.github.io/eudora/dist/" class="gradient_bg btn btn-success glyphicon glyphicon-search"></a>
+                        <a href="https://github.com/citcen/eudora" class="gradient_bg btn btn-warning glyphicon glyphicon-cloud-download"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pic_project col-md-4 col-sm-6 col-xs-12 link pc hide">
+                <img src="img/portfolio/portfolio5.jpg" class="img-responsive">
+                <div>
+                    <h1>湖南金伦有限公司</h1>
+                    <span></span>
+                    <div>
+                        <a href="http://www.jinluntz.com"
+                           class="gradient_bg btn btn-success glyphicon glyphicon-search"></a>
+                        <a href="javascript:;" class="gradient_bg btn btn-warning glyphicon glyphicon-cloud-download"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pic_project col-md-4 col-sm-6 col-xs-12 link my_app hide">
+                <img src="img/portfolio/portfolio9.jpg" class="img-responsive">
+                <div>
+                    <h1>永诚恒Web App</h1>
+                    <span></span>
+                    <div>
+                        <a href="javascript:;" class="gradient_bg btn btn-success glyphicon glyphicon-search"></a>
+                        <a href="javascript:;" class="gradient_bg btn btn-warning glyphicon glyphicon-cloud-download"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="bg_color">
+            <div class="container">
+                <div class="row footer_me">
+                    <p><span class="color">联</span>系我</p>
+                    <div class="color"></div>
+                </div>
+                <form action="#">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <label for="uname" class="hint">姓名:</label>
+                        <input id="uname" type="text" class="form-control" placeholder="姓名:" required>
+                        <label for="uemail" class="hint">邮箱:</label>
+                        <input id="uemail" type="email" class="form-control" placeholder="邮箱:" required>
+                        <label for="uphone" class="hint">电话:</label>
+                        <input id="uphone" type="text" class="form-control" placeholder="电话:" required>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <label for="textarea" class="hint"></label>
+                        <textarea name="" id="textarea" cols="30" rows="10" placeholder="请留言"></textarea>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <button type="button" class="col-xs-12 col-sm-12 btn btn-success gradient_bg"> 提交<span
+                                class="glyphicon glyphicon-chevron-right"></span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/jquery-1.11.3.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/still.js"></script>
+    <!-- <script>
+
+        videojs.options.flash.swf = "videos/ocean.swf";
+
+    </script>-->
 </body>
 </html>
