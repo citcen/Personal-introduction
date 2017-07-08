@@ -9,7 +9,6 @@
 * {
     -webkit-transition: width 0.5s, padding 0.5s, margin 0.5s;
     -moz-transition: width 0.5s, padding 0.5s, margin 0.5s;
-    -ms-transition: width 0.5s, padding 0.5s, margin 0.5s;
     -o-transition: width 0.5s, padding 0.5s, margin 0.5s;
     transition: width 0.5s, padding 0.5s, margin 0.5s;
 }
@@ -24,11 +23,11 @@
 }
 
 header {
-    background: url("../img/backgrounds/counter-bg.jpg");
+    background: url("../img/backgrounds/counter-bg.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
     min-height: 700px;
+    max-height: 700px;
 }
 
 section, footer {
@@ -129,10 +128,7 @@ header .container {
     transform: translateX(0px);
     -webkit-transition: transform 0.8s, opacity 1s 0.2s;
     -moz-transition: transform 0.8s, opacity 1s 0.2s;
-
     -o-transition: transform 0.8s, opacity 1s 0.2s;
-
-    -ms-transition: transform 0.8s, opacity 1s 0.2s;
     transition: transform 0.8s, opacity 1s 0.2s;
 
 }
@@ -303,7 +299,7 @@ header .container {
     width: 100%;
     min-height: 360px;
     background: url("../img/backgrounds/counter-bg.jpg");
-    padding: 20px 0 0 0px;
+    padding: 20px 0 0 0;
 }
 
 @media screen and(min-width: 768px) {
@@ -329,7 +325,6 @@ header .container {
     transform: translateY(-5px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
     -webkit-box-shadow: 5px 5px 10px #ddd;
@@ -383,7 +378,6 @@ header .container {
     transform: translateY(100%);
     -webkit-transition: transform 0.5s, opacity 0.1s 0.5s;
     -moz-transition: transform 0.5s, opacity 0.1s 0.5s;
-    -ms-transition: transform 0.5s, opacity 0.1s 0.5s;
     -o-transition: transform 0.5s, opacity 0.1s 0.5s;
     transition: transform 0.5s, opacity 0.1s 0.5s;
     opacity: 0;
@@ -393,14 +387,13 @@ header .container {
     text-align: center;
     font-size: 25px;
     color: #F8F8F8;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .pic_project:hover h1 {
     padding-top: 50px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -413,12 +406,11 @@ header .container {
     background: #ac2925;
 }
 
-.gradient_bg { /*              渐变背景通用样式                    */
+.gradient_bg { /*              渐变背景通用样式            */
     background: transparent;
     border-width: 2px;
     -webkit-transition: background 1s;
     -moz-transition: background 1s;
-    -ms-transition: background 1s;
     -o-transition: background 1s;
     transition: background 1s;
 }
@@ -438,7 +430,6 @@ header .container {
     padding-right: 0;
     -webkit-transition: padding-right 1s 1s;
     -moz-transition: padding-right 1s 1s;
-    -ms-transition: padding-right 1s 1s;
     -o-transition: padding-right 1s 1s;
     transition: padding-right 1s 1s;
 }
@@ -446,7 +437,6 @@ header .container {
 .pic_project > img {
     -webkit-transition: transform 4s;
     -moz-transition: transform 4s;
-    -ms-transition: transform 4s;
     -o-transition: transform 4s;
     transition: transform 4s;
 }
@@ -459,7 +449,6 @@ header .container {
     transform: scale(1.5, 1.5);
     -webkit-transition: transform 3s;
     -moz-transition: transform 3s;
-    -ms-transition: transform 3s;
     -o-transition: transform 3s;
     transition: transform 3s;
 }
@@ -473,7 +462,6 @@ header .container {
     transform: translateY(0%);
     -webkit-transition: transform 0.5s, opacity 0.1s;
     -moz-transition: transform 0.5s, opacity 0.1s;
-    -ms-transition: transform 0.5s, opacity 0.1s;
     -o-transition: transform 0.5s, opacity 0.1s;
     transition: transform 0.5s, opacity 0.1s;
 }
@@ -535,7 +523,6 @@ footer .btn {
     outline: none;
     -webkit-transition: padding-right 0.5s;
     -moz-transition: padding-right 0.5s;
-    -ms-transition: padding-right 0.5s;
     -o-transition: padding-right 0.5s;
     transition: padding-right 0.5s;
 }
@@ -555,7 +542,6 @@ footer .btn span {
     transform: translateX(20px);
     -webkit-transition: transform 0.5s, opacity 0.5s;
     -moz-transition: transform 0.5s, opacity 0.5s;
-    -ms-transition: transform 0.5s, opacity 0.5s;
     -o-transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
@@ -564,7 +550,6 @@ footer .btn:hover {
     padding-right: 30px;
     -webkit-transition: padding-right 1s;
     -moz-transition: padding-right 1s;
-    -ms-transition: padding-right 1s;
     -o-transition: padding-right 1s;
     transition: padding-right 1s;
 }
@@ -578,7 +563,6 @@ footer .btn:hover span {
     transform: translateX(0px);
     -webkit-transition: transform 0.8s, opacity 1s 0.2s;
     -moz-transition: transform 0.8s, opacity 1s 0.2s;
-    -ms-transition: transform 0.8s, opacity 1s 0.2s;
     -o-transition: transform 0.8s, opacity 1s 0.2s;
     transition: transform 0.8s, opacity 1s 0.2s;
 }
