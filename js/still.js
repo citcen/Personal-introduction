@@ -24,9 +24,9 @@ $(window).scroll(function () {
     $('#mycollapse').find('a').each(function (i) {
         elem_a[i] = $(this);
     });
+
     //页面向下滚动距离
     var scrolltop = $('body').scrollTop();
-    /*console.log(scrolltop);*/
     if (scrolltop < elem_sTop[0]) {
         elem_a[0].parent().addClass('active').siblings().removeClass('active');
     } else if (scrolltop >= elem_sTop[0] && scrolltop < elem_sTop[1]) {
@@ -35,7 +35,7 @@ $(window).scroll(function () {
         elem_a[2].parent().addClass('active').siblings().removeClass('active');
     } else if (scrolltop >= elem_sTop[2] && scrolltop < elem_sTop[3] - 500) {
         elem_a[3].parent().addClass('active').siblings().removeClass('active');
-    } else if (scrolltop > elem_sTop[3] - 400) {
+    } else if (scrolltop > elem_sTop[3] - 467) {
         elem_a[4].parent().addClass('active').siblings().removeClass('active');
     }
     //导航条控制相关
